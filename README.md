@@ -40,17 +40,17 @@ pip install -r requirements.txt
 ```
 Настройка: создать файл `.env` в каталоге `payment_project/` со следующими настройками:
 
-`CACHE_TYPE`=redis
-`CACHE_REDIS_HOST`=redis
-`CACHE_REDIS_PORT`=6379
-`CACHE_REDIS_DB`=0
-`CACHE_REDIS_URL`=redis://localhost:6379/0
-`CACHE_DEFAULT_TIMEOUT`=500
-`FLASK_DEBUG`=True
-`API_KEY`- получите api ключ при регистрации на [сайте](https://openweathermap.org/)
+-`CACHE_TYPE`=redis
+-`CACHE_REDIS_HOST`=redis
+-`CACHE_REDIS_PORT`=6379
+-`CACHE_REDIS_DB`=0
+-`CACHE_REDIS_URL`=redis://localhost:6379/0
+-`CACHE_DEFAULT_TIMEOUT`=500
+-`FLASK_DEBUG`=True
+-`API_KEY`- получите api ключ при регистрации на [сайте](https://openweathermap.org/)
 
 Настройка: создать файл `.flaskenv` в каталоге `payment_project/` со следующими настройками:
-`FLASK_APP`=app
+-`FLASK_APP`=app
 
 Запустить сервер
 ```sh
@@ -61,7 +61,7 @@ flask run
 
 
 
-```http://127.0.0.1:8000/weather/<city>/``` - получит координаты города и перенаправит на результат погоды
+```http://127.0.0.1:5000/weather/<city>/``` - получит координаты города и перенаправит на результат погоды
 
 
 
